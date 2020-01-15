@@ -1,6 +1,6 @@
 
 <template>
-    <v-app>
+    <v-app style="background-color: lemonchiffon">
         <v-app-bar dark
                    prominent
                    src="https://b2303ztyja-flywheel.netdna-ssl.com/wp-content/uploads/2016/08/Fruits-Vegetables-Stock-002.jpg" app>
@@ -48,6 +48,7 @@
                 this.$router.push('/profile')
             }
         },
+
         created() {
             addHandler(data => {
                 if (data.objectType === 'MESSAGE') {
